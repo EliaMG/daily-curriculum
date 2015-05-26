@@ -22,12 +22,12 @@ We say that a method is _recursive_ if it:
 
 ## Solve a big problem with a bunch of little problems
 
-Recursion is useful as a way to divide a large problem into a smaller one. A common way to demonstrate recursion is to use it to calculate the factorial of a number. A factorial is the product of all positive integers less than or equal to the number. Therefor, the factorial of 5 is equal to `1 * 2 * 3 * 4 * 5`.
+Recursion is useful as a way to divide a large problem into a smaller one. A common way to demonstrate recursion is to use it to calculate the factorial of a number. A factorial is the product of all positive integers less than or equal to the number. Therefore, the factorial of 5 is equal to `1 * 2 * 3 * 4 * 5`.
 
 ```ruby
 def factorial(num = 0)
   # this is a guard clause
-  return "Can not calculate factorial of a negative number" if num < 0
+  return "Cannot calculate factorial of a negative number" if num < 0
 
   if num <= 1
     1 # this is our base case
@@ -78,7 +78,7 @@ Often it's not. If you find yourself saying "Geez, I wish I'd used a loop here" 
 
 ## Exercise!
 
-With your chair-pair, write an algorithm to compute factorials that __does not__ use recursion. We will look at a couple of your solutions, pick one we really like, and compare it to a recursive solution. The goal is to have a conversation in which we compaire two solutions on their design, readability, and efficiency.
+With your chair-pair, write an algorithm to compute factorials that __does not__ use recursion. We will look at a couple of your solutions, pick one we really like, and compare it to a recursive solution. The goal is to have a conversation in which we compare two solutions on their design, readability, and efficiency.
 
 ## Thinking about the Call Stack: Recursive Fibonnacci
 
